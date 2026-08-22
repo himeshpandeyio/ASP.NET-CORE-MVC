@@ -1,0 +1,20 @@
+@model List<MyMvcApp.Models.Product>
+
+<h2>Our Products</h2>
+
+<div class="create" style="margin-bottom: 20px">
+    <a asp-controller="Home" asp-action="Create" class="btn btn-primary">Create New Product</a>
+</div>
+
+@foreach (var product in Model)
+{
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@product.Name </h5>
+            <h2 class="card-subtitle mb-2 text-muted">@product.Price.ToString("C")</h2>
+            <p class="card-text">@product.Description</p>
+        </div>
+
+    </div>
+}

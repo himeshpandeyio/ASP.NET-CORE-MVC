@@ -1,0 +1,31 @@
+@model MyMvcApp.Models.Product
+
+<h2>Create New Product</h2>
+
+<!-- The form posts to the Create action on HomeController -->
+<form asp-controller="Home" asp-action="Create" method="post">
+
+    <!-- Validation summary shows overall form errors -->
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <!-- asp-for automatically sets name="Name" and id="Name" -->
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Product</button>
+</form>
