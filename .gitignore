@@ -15,4 +15,4 @@
 ## Ignore Environment & Secret Configuration Files
 appsettings.Development.json
 appsettings.Production.json
-appsettings.Secrets.json
+appsettings.json
