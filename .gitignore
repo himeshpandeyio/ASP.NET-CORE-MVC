@@ -1,0 +1,18 @@
+## Ignore Visual Studio / VS Code build output & temporary files
+[Bb]in/
+[Oo]bj/
+.vs/
+.vscode/
+*.user
+*.suo
+
+## Ignore Database & Local State
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+## Ignore Environment & Secret Configuration Files
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Secrets.json
