@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/3enk1rfmaI=",
+  "success": true,
+  "projectFilePath": "/home/freshuser/MVC/MyMvcApp/MyMvcApp.csproj",
+  "expectedPackageFiles": [
+    "/home/freshuser/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.11/microsoft.aspnetcore.app.ref.10.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
